@@ -33,7 +33,7 @@ export class Busy {
   }
 
   async createBusyView() {
-    let factory = await this.viewEngine.loadViewFactory('widgets/busy/busy.html');
+    let factory = await this.viewEngine.loadViewFactory('busy.html');
     const childContainer = this.container.createChild();
     this.view = factory.create(childContainer);
     this.view.bind(this);
